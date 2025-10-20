@@ -1,0 +1,5 @@
+{
+  "name": "XML Data Exchange Rules Viewer",
+  "description": "An elegant and interactive viewer for XML-based data exchange rules, allowing easy navigation, filtering, and inspection of conversion and export logic.",
+  "requestFramePermissions": []
+}
