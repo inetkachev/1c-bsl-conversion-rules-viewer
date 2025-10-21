@@ -66,7 +66,7 @@ const getRuleSearchableText = (rule: Rule): string => {
 
 const App: React.FC = () => {
     const [data, setData] = useState<ParsedData | null>(null);
-    const [loading, setLoading] = useState<boolean>(true);
+    const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
     const [selectedCategory, setSelectedCategory] = useState<CategoryKey>('pko');
     const [selectedItem, setSelectedItem] = useState<Rule | null>(null);
@@ -118,7 +118,7 @@ const App: React.FC = () => {
     }, []);
 
     useEffect(() => {
-        loadAndParseXml('/default.xml');
+        // loadAndParseXml('/default.xml');
     }, [loadAndParseXml]);
 
     const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
