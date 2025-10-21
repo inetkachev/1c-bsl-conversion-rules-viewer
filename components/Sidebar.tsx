@@ -77,6 +77,12 @@ const Sidebar: React.FC<SidebarProps> = ({
         >
           Upload New File
         </button>
+        <button 
+            onClick={() => onFileChange({ target: { files: [new File([], 'default.xml')] } } as any)}
+            className="w-full mt-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+        >
+            Load Default
+        </button>
       </div>
       <div className="p-4 border-t border-gray-700/50 text-xs text-gray-500">
         <p>&copy; 2024 Rule Viewer</p>

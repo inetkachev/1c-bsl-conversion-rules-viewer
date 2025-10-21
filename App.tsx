@@ -124,7 +124,11 @@ const App: React.FC = () => {
     const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const file = event.target.files?.[0];
         if (file) {
-            loadAndParseXml(file);
+            if (file.name === 'default.xml' && file.size === 0) {
+                loadAndParseXml('/default.xml');
+            } else {
+                loadAndParseXml(file);
+            }
         }
         if(event.target){
             event.target.value = '';
