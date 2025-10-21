@@ -118,7 +118,7 @@ const App: React.FC = () => {
     }, []);
 
     useEffect(() => {
-        loadAndParseXml('default.xml');
+        loadAndParseXml('/default.xml');
     }, [loadAndParseXml]);
 
     const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
