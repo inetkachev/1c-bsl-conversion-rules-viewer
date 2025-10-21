@@ -2,3 +2,7 @@
 
 Поддерживается только сам файл правил, нет обогащения файлами MD метаданных. 
 Сделано на скорую руку, так что могут быть ошибки, но это все еще гораздо удобнее чем смотреть голый XML или ставить конфигурацию КД.
+
+Окрывать тут https://inetkachev.github.io/1c-bsl-conversion-rules-viewer/ 
+
+<img width="2844" height="1753" alt="image" src="https://github.com/user-attachments/assets/3f3cd181-cb60-4767-b89c-c94c3643fddf" />
